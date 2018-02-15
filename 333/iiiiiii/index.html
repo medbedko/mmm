@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+	<div class="todolist">
+		<input type="text" class="new"
+			   v-model="item"
+			   @keyup.enter="addItem">
+		
+		<ul class="blockjobs" v-if="items.length">
+			
+			<li v-for="item in items">
+				
+				<input type="checkbox" class="ok"><label   class="job" @dblclick="edit "   >{{ item.name }}</label>
+				<input type="text" class="red" value="" @keyup.enter.input="item.name = $event.target.value" v-if="show "  >
+				<a class="close" href="#" v-on:click="removeItem(item)">Удалить</a>
+			</li>
+			
+		</ul><p v-if="!items.length">Список пуст!</p>{{items[3]}}
+	</div>
+	
+
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>-->
+	
+	<script src="vue.js"> </script>
+<script src="js.js"> </script>
+</body>
+</html>
