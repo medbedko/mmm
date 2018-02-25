@@ -1,0 +1,428 @@
+@import "compass/reset";
+html{
+	body{
+		
+		padding: 0 10px;
+		margin: 0 auto;
+		overflow-x: hidden;
+	}
+	body *{
+		font-size: 14px;
+		line-height: 22px;
+		font-family: 'PT Sans', 'PTSansWebRegular', sans-serif;
+	}
+}
+/*Попап начало*/
+.popup{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+	left: 0px;
+	z-index: 555;
+	.popupwindow{
+		margin: 80px auto 0px auto;
+		width: 330px;
+		height: 400px;
+		padding: 10px;
+		background-color: #fff;
+		border-radius: 0px;
+		position: relative;
+		a{
+			position: absolute;
+			right: -20px;
+			top: -20px;
+			width: 20px;
+			height: 20px;
+			background-image: url(../img/close.jpg);
+			background-repeat: no-repeat;
+			background-position: -4px -3px;
+		}
+		p{
+			font-weight: bold;
+			font-size: 16px;
+			margin: 5px auto 10px;
+			display: table;
+			position: relative;
+		}
+		label{
+			display: block;
+			text-align: center;
+			margin-top: 7px;
+			font-size: 12px;
+		}
+		input, textarea{
+			margin: 0 auto;
+			display: block;
+			padding-left: 15px;
+			width: 75%;
+		}
+		textarea{
+			height: 100px;
+		}
+		input[type="submit"]{
+			background-color: #666;
+			border: none;
+			width: 30%;
+			padding: 3px 5px;
+			color: #fff;
+			font-weight: bold;
+			font-size: 12px;
+			height: 30px;
+			position: relative;
+			bottom: -15px;
+		}
+		
+}
+}
+/*фон ошибки заполнения поля начало*/
+/*тень*/
+.placeholderr {
+	-webkit-box-shadow: inset 0px 0px 10px -2px rgba(255,0,0,1);
+	-moz-box-shadow: inset 0px 0px 10px -2px rgba(255,0,0,1);
+	box-shadow: inset 0px 0px 10px -2px rgba(255,0,0,1);
+	border: 0;
+	padding: 3px 0 3px 10px;
+	font-size: 10px;
+		}
+/*цвет текста */
+.placeholderr::placeholder{
+	color: red;
+    opacity: 1;
+}
+.placeholderr:-ms-input-placeholder{
+	color: red;
+}
+.placeholderr::-ms-input-placeholder{
+	color: red;
+}
+/*фон ошибки заполнения поля конец*/
+/*Попап конец*/
+/*хидер начало*/
+.container header{
+	padding: 50px 0;
+	position: relative;
+	top: 0;
+	width: 980px;
+	margin: 0 auto;
+	.logo{
+		div{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			float: left;
+			margin-right: 10px;
+			img{
+				width: 100%;
+				height: 100%;
+				
+			}
+			
+		}
+		h1{
+			display: inline-block;
+			font-size: 22px;
+			font-weight: bold;
+			position: relative;
+			margin: 5px 0;
+		}
+		p{
+			display: inline-block;
+		}
+	}
+	.call{
+		text-align: right;
+		position: relative;
+		top: -20px;
+		p{
+			font-size: 26px;
+			margin: 8px 0;
+		}
+		a{
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			color: #333;
+			border-bottom: dashed #333 1px;
+		}
+	}
+}
+
+/*хидер конец*/
+/*меню начало*/
+menu.row{
+	margin: 0 -30%;
+}
+menu{
+	
+	background-color: #333;
+	color: #ddd;
+	font-size: 18px;
+	ul{
+	display: flex;
+    margin: 0 auto;
+    width: 960px;
+    justify-content: center;
+	}
+	li{
+		padding: 10px 10px;
+		font-size: 18px;
+		color: #ddd;
+		margin: 0 auto;
+		a{
+			padding: 10px 10px;
+			font-size: 18px;
+			color: #ddd;
+		}
+		a:hover{
+			color: #ddd;
+			font-weight: bold;
+		}
+	}
+	i{
+		font-size: 18px;
+    	margin: 9px 0;
+	}
+}
+/*меню конец*/
+/*слайдер начало*/
+.sliderr{
+	    display: flex;
+		position: relative;
+		width: 160%;
+   		left: -30%;
+	.slider{
+		width: 100%;
+		height: 300px;
+		position: static;
+		top: 0;
+		left: 0;
+		right: 0;
+				
+	}
+	.img{
+		text-align: center;
+		line-height: 300px;
+		position: absolute;
+		font-size: 50px;
+		color: #fff;
+		display: none;
+		width: 100%;
+		height: 300px;
+   		margin: 0;
+		background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	}
+	.img.curry{
+		display: block;
+	}
+	.img:first-child{
+		
+		background-image: url(../img/Desert.jpg);
+	}
+	.img:nth-child(2){
+	
+		background-color: coral;
+	}
+	.img:nth-child(3){
+	
+		background-color: chartreuse;
+	}
+	.img:nth-child(4){
+	
+		background-color:darkviolet;
+	}
+	.img:nth-child(5){
+		
+		background-color: chocolate;
+	}
+	.n{
+		color: khaki;
+		
+	}
+	a{
+		text-decoration: none;
+		color: rgba(120,120,120,0.35);
+		font-size: 100px;
+		position: absolute;
+		
+	}
+	a:hover{
+		color: darkmagenta;
+	}
+	.prev{
+		position: relative;
+		top: 100px;
+		right: -20%;
+		z-index: 222;
+	}
+	.next{
+		position: relative;
+		top: 100px;
+		right: 22%;
+		z-index: 222;
+	}
+}
+/*слайдер конец*/
+/* крошки начало*/
+.breadcrumbs{
+	margin: 5px;
+	a{
+		padding: 0 5px;
+		color: #666;
+		text-decoration: underline solid #666 ;
+	}
+	a:last-child{
+		text-decoration: none;
+	}
+}
+/*контент начало*/
+.content{
+	width: 980px;
+	margin: 0 auto;
+
+/*левый блок начало*/
+.leftblock{
+	.firstlvl{
+		.activecatalog{
+			border-bottom: 1px solid #666;
+			display: inline;
+		}
+	}
+	.secondlvl {
+		list-style-type: disc;
+		padding-left: 30px;
+		text-decoration: none;
+		li{
+			font-size: 12px;
+			text-decoration: none;
+		}
+	}
+	a{
+		bottom: -10px;
+		height: 80px;
+		font-weight: bold;
+		position: relative;
+		background-image: url(../img/price.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		display: block;
+		padding-top: 80px;
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 18px;
+		color: #333;
+		text-align: center;
+		right: -35px;
+		margin-top: 100px;  
+	}
+}
+/*левый блок конец*/
+/*правый блок начало*/
+.centerblock{
+	.mainspisok{
+		li{
+			display: inline-block;
+			position: relative;
+			background-color: #777;
+			width: 30%;
+			margin: 8px 3px;
+		}
+		img{
+			width: 80%;
+			height: 80%;
+			margin: 10% 10% 3% 10%;
+		}
+		p{
+			width: 70%;
+			text-align: left;
+			font-size: 12px;
+			margin: 0 auto;
+			line-height: 1.4;
+		}
+		i{
+			margin: 30px 0 10px 30px;
+			position: relative;
+			display: inline-block;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		a{
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: relative;
+			display: inline-block;
+			margin: 30px 0 -5px 50px;
+			font-size: 32px;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.listnumber{
+		display: flex;
+		li{
+			margin: 0 10px;
+			
+			a{
+				color: #666;
+				text-decoration: none;
+			}
+		}
+		li a.active{
+			font-weight: bold;
+			font-size: 18px;
+		}
+	}
+	/*правый блок конец*/
+	.feedback{
+		display: inline-block;
+		margin-bottom: 100px;
+		p{
+			float: left;
+			
+		}
+	}
+}
+	}
+footer{
+	color: #fff;
+	background-color: #333;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0 -25%;
+	position: relative;
+	bottom: 0;
+	.footercontent{
+		width: 960px;
+		margin: 0 auto;
+		a{
+			color: #fff;
+			text-align: left;
+		}
+		ul li a{
+			text-decoration: underline #fff solid;
+		}
+	}
+	.creater{
+		i{
+			background-image: url(../img/ftrlogo.gif);
+			width: 40px;
+			height: 40px;
+			display: block;
+			float: left;
+			background-repeat: no-repeat;
+			margin: 5px;
+			
+		}
+		.raz{
+			text-decoration: underline #fff solid;
+		}
+	}
+}
+/*правый блок конец*/
+/*контент конец*/

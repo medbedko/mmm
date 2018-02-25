@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<title>Заголовок</title>
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400i" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	 
+</head>
+<body>
+	<div class="container ">
+		<!--Попап окно начало-->
+		<div class="popup" id="popup1">
+			<div class="popupwindow form_box">
+				<a href="javascript:PopUpHide()"></a>
+				<p>ОБРАТНАЯ СВЯЗЬ </p>
+				<form action="#" method="post" class="rf">
+					<label for="name">Ваше имя *</label>
+					<input type="text" id="name"  class="rfield">
+					<label for="fhone">Телефон *</label>
+					<input type="text" id="phone" class="rfield">
+					<label for="mail">Email *</label>
+					<input type="text" id="mail" class="rfield">
+					<label for="">Сообщение</label>
+					<textarea name="" id="" cols="30" rows="10" readonly></textarea>
+					<input type="submit" value="ОТПРАВИТЬ" class="btn_submit disabled" >
+				</form>
+			</div>
+		</div>
+		<!--Попап окно конец-->
+		<!--Хидер начало-->
+		<header class="row col-12">
+			<div class="logo col-sm-6 col-12">
+				<div><img src="img/logo.jpg" alt="logo"></div>
+				<h1>Название <br> компании</h1>
+				<p>самая клевая компания</p>
+			</div>
+			<div class="call col-sm-6 col-12">
+				<p>+7(499) 777-77-77</p>
+				<p>+7(499) 777-77-77</p>
+				<a href="javascript:PopUpShow()">Обратная связь</a>
+			</div>
+		</header>
+		<!--Хидер конец-->
+		<!--Основное меню начало-->
+		<menu class="row">
+			<i class=" sendwich fa fa-bars fa-3x" aria-hidden="true" col-3 offset-9 ></i>
+			<ul class=" menubar">
+				<li type="none"><a href="#">Главная</a></li><i>|</i>
+				<li type="none"><a href="#">Каталог</a></li><i>|</i>
+				<li type="none"><a href="#">Доставка и оплата</a></li><i>|</i>
+				<li type="none"><a href="#">Прайс-лист</a></li><i>|</i>
+				<li type="none"><a href="#">Контакты</a></li>
+			</ul>
+			
+		</menu>
+		<!--Основное меню конец-->
+		<!--Слайдер начало-->
+	  <div class="sliderr row">
+		
+		  <div class="prev n"><a href="#slider" class="fa fa-angle-double-left" aria-hidden="true"></a></div>
+		  
+		  <div class="slider" name="slider">
+		  	<div class="img curry"> </div>
+		  	<div class="img"> </div>
+		  	<div class="img"> </div>
+		  	<div class="img"> </div>
+		  	<div class="img"> </div>
+		  </div>
+		  <div class="next n"><a href="#slider" class="fa fa-angle-double-right" aria-hidden="true"></a></div>
+		</div>
+		<!--Хлебные крошки начало-->
+		<p class="row breadcrumbs col-11">
+			<a href="#">Главная</a>/ 
+			<a href="#">Каталог</a>/ 
+			<a href="#">Бытовая техника</a>
+		</p>
+		<!--Контент начало-->
+		<div class="content row col-12">
+			<div class="leftblock col-md-3 col-sm-4">
+				<ul class="firstlvl">
+					<li>Автомобили</li>
+					<li class="activecatalog">Бытовая техника
+						<ul class="secondlvl">
+							<li>Микроволновки</li>
+							<li>Холодильники</li>
+							<li>Посудомоечные машины</li>
+							<li>Чайники</li>
+						</ul>
+					</li>
+					<li>Мобильная техника</li>
+					<li>Компьютеры</li>
+					<li>Одежда</li>
+					<li>Недвижимость</li>
+					
+				</ul>
+				<a href="#" class="col-12" >Прайс лист</a>
+			</div>
+			<div class="centerblock col-md-9  col-sm-12">
+				<ul class="mainspisok">
+					<li class="col-">
+						<img src="img/element.jpg" alt="tov1">
+						<p>Самый клевый чайник, который надо купить!</p>
+						<i>1 900 р.</i>
+						<a href="#" class="fa fa-cart-arrow-down"></a>
+					</li>
+					<li class="col-">
+						<img src="img/element.jpg" alt="tov2">
+						<p>Самый клевый чайник, который надо купить!</p>
+						<i>1 900 р.</i>
+						<a href="#" class="fa fa-cart-arrow-down"></a>
+					</li>
+					<li class="col-">
+						<img src="img/element.jpg" alt="tov3">
+						<p>Самый клевый чайник, который надо купить!</p>
+						<i>1 900 р.</i>
+						<a href="#" class="fa fa-cart-arrow-down"></a>
+					</li>
+					<li class="col-">
+						<img src="img/element.jpg" alt="tov4">
+						<p>Самый клевый чайник, который надо купить!</p>
+						<i>1 900 р.</i>
+						<a href="#" class="fa fa-cart-arrow-down"></a>
+					</li>
+					<li class="col-">
+						<img src="img/element.jpg" alt="tov5">
+						<p>Самый клевый чайник, который надо купить!</p>
+						<i>1 900 р.</i>
+						<a href="#" class="fa fa-cart-arrow-down"></a>
+					</li>
+				</ul>
+				<ul class="listnumber col-sm-4 offset-sm-4 col-12 offset-0">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#" class="active">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+				</ul>
+				<hr>
+				<div class="feedback">
+				<p class="col-sm-6 ">Компания "Пиксель Плюс" существует более 6 лет, за это время мыпринимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называтьсебя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде. Характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p>
+				<p class="col-sm-6 ">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данный момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.  </p>
+			</div>
+			</div>
+			
+		</div>		
+		<!--Контент конец-->
+		<!--Подвал начало-->
+		<footer class="">
+			<div class="footercontent row">
+			<div class="copyright col-xl-3 col-md-4 offset-md-0 col-sm-6 offset-sm-6 col-8 offset-1">
+				<p> 2012-2013 ЗАО "Компания"</p>
+				<a href="mailto:info@name.ru">info@name.ru</a>
+			</div>
+			<ul class="col-xl-2 offset-xl-1 col-md-3 col-sm-6">
+				<li><a href="">Главная</a></li>
+				<li><a href="">Каталог</a></li>
+				<li><a href="">Доставка и оплата</a></li>
+				<li><a href="">Прайс-лист</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<div class="creater col-xl-3 offset-xl-3 col-md-5 offset-md-0 col-sm-6 offset-sm-6 col-8 offset-1" ><i></i><a href="">
+					<p class="raz">Разработка сайта -</p>
+					<p>компания "Пиксель Плюс"</p>
+				</a>
+			</div>
+			</div>
+		</footer>
+		<!--Подвал конец-->
+	</div>
+	<script type="text/javascript" src="libs/slider/jquery.js"></script>
+	<script src="libs/jquerry/jquery-3.3.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

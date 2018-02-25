@@ -1,0 +1,102 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  menu ul {
+    width: 690px; }
+
+  .content .centerblock .mainspisok li {
+    width: 47%; }
+
+  footer .footercontent {
+    width: 690px; }
+    footer .footercontent .creater {
+      padding-left: 9%; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .container header .logo p {
+    width: 122%;
+    display: block; }
+
+  menu ul {
+    width: 576px; }
+    menu ul li a {
+      font-size: 14px; }
+
+  .content .leftblock {
+    display: none; }
+  .content .centerblock .mainspisok li {
+    width: 47%; }
+
+  footer {
+    padding-bottom: 0; }
+    footer .footercontent {
+      width: 540px; }
+      footer .footercontent .copyright {
+        position: relative;
+        top: 110px;
+        left: 80px; }
+      footer .footercontent .creater {
+        padding-left: 9%;
+        position: relative;
+        top: -110px; } }
+@media only screen and (max-width: 575px) {
+  header > div {
+    margin-top: 40px; }
+
+  menu.row {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: calc(100% + 30px);
+    left: 0;
+    z-index: 11; }
+    menu.row .sendwich {
+      margin: 3px auto; }
+      menu.row .sendwich:hover {
+        cursor: pointer; }
+    menu.row ul {
+      display: none; }
+      menu.row ul li a {
+        font-size: 22px; }
+      menu.row ul i {
+        display: none; }
+
+  .content .centerblock .mainspisok li {
+    width: 90%;
+    max-width: 250px;
+    margin: 8px auto;
+    display: block; }
+  .content .centerblock .listnumber {
+    justify-content: center; }
+
+  .feedback p {
+    margin-bottom: 20px;
+    width: calc(100% + 80px);
+    margin-left: -40px; }
+
+  footer {
+    padding-bottom: 0; }
+    footer .footercontent {
+      width: 540px; }
+      footer .footercontent .copyright {
+        position: relative;
+        top: 40px;
+        left: 80px; }
+      footer .footercontent .creater {
+        padding-left: 9%;
+        position: relative;
+        top: -60px; }
+      footer .footercontent ul {
+        display: none; } }
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 576px) {
+  menu.row .sendwich {
+    display: none; } }
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
