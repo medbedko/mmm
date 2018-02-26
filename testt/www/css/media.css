@@ -15,12 +15,11 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .container header .logo p {
-    width: 122%;
     display: block; }
 
-  menu ul {
+  menu.row ul {
     width: 576px; }
-    menu ul li a {
+    menu.row ul li a {
       font-size: 14px; }
 
   .content .leftblock {
@@ -48,7 +47,7 @@
     position: absolute;
     top: 0;
     margin: 0;
-    width: calc(100% + 30px);
+    width: 100%;
     left: 0;
     z-index: 11; }
     menu.row .sendwich {
@@ -78,11 +77,11 @@
   footer {
     padding-bottom: 0; }
     footer .footercontent {
-      width: 540px; }
+      width: 100%; }
       footer .footercontent .copyright {
         position: relative;
         top: 40px;
-        left: 80px; }
+        left: 50px; }
       footer .footercontent .creater {
         padding-left: 9%;
         position: relative;

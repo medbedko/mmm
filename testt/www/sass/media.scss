@@ -33,11 +33,11 @@
 @media only screen and (max-width : 767px) {
 	.container header{
 		.logo p{
-			width: 122%;
+			
 			display: block; 
 		}
 	}
-		menu{
+		menu.row{
 		ul{
 			width: 576px;
 			li{
@@ -85,7 +85,7 @@
 		position: absolute;
 		top: 0;
 		margin: 0;
-		width: calc(100% + 30px);
+		width: 100%;
 		left: 0;
 		z-index: 11;
 		.sendwich{
@@ -130,11 +130,11 @@
 	footer{
 		padding-bottom: 0;
 		.footercontent{
-			width: 540px;
+			width: 100%;
 			.copyright{
 				position: relative;
 				top: 40px;
-				left: 80px;
+				left: 50px;
 			}
 			.creater{
 				padding-left: 9%;
